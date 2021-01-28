@@ -1,0 +1,25 @@
+li {
+  border: grey 1px solid;
+}
+
+.userAndPostJPH {
+  display: flex;
+}
+
+.userJPH {
+  width: 50%;
+}
+
+.postJPH {
+  width: 50%;
+}
+
+app-user-from-jph{
+display: flex;
+}
+
+app-post{
+  display: flex;
+}
+
+

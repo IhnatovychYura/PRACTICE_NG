@@ -1,0 +1,28 @@
+<div>
+  <h2>All Users from my Data</h2>
+  <ul *ngFor="let itemFromUsers of usersWithAddress">
+    <li>
+      <app-user [user]="itemFromUsers"></app-user>
+    </li>
+  </ul>
+</div>
+
+<hr>
+<h1>Hello, it's PRACTICE TWO</h1>
+<h2>All Users from JSON PLACE HOLDER</h2>
+<div [className]="'userAndPostJPH'">
+  <div [className]="'userJPH'">
+    <app-user-from-jph
+      *ngFor="let itemFromJPH of usersFromJPH"
+      [userFromJPH]="itemFromJPH"
+      (bubbleUp)="getIdFromBubble($event)">
+    </app-user-from-jph>
+  </div>
+  <div [className]="'postJPH'">
+    <app-post *ngFor="let singlePost of clickedUserPosts" [postFromJPH]="singlePost"></app-post>
+  </div>
+</div>
+
+
+
+
